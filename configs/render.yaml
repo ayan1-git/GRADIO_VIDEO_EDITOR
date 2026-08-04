@@ -1,0 +1,26 @@
+# Video encoding settings
+video:
+  codec: libx264
+  crf: 18
+  preset: fast
+
+# GPU encoding settings (Kaggle T4)
+gpu:
+  codec: h264_nvenc
+  cq: 19
+  preset: slow
+  hwaccel: cuda
+  maxrate: 80M
+  bufsize: 160M
+
+# Audio encoding settings
+audio:
+  codec: aac
+  bitrate: 192k
+
+# Render settings
+render:
+  work_dir: /kaggle/working
+  checkpoint_dir: /kaggle/working/.checkpoints
+  parallel_segments: false
+  use_gpu: true
