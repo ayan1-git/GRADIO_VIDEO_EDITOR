@@ -2,7 +2,7 @@ __pycache__/
 *.pyc
 .ipynb_checkpoints/
 .kaggle/
-
+*.wav
 .checkpoints/
 .DS_Store
 
@@ -12,3 +12,8 @@ token.json
 
 # Notebook with embedded secrets
 notebooks/kaggle_render.ipynb
+
+# Keep the audio folder structure in the repo without tracking large media files
+media/audio/*
+!media/audio/.gitkeep
+!media/audio/.gitignore
